@@ -10,7 +10,8 @@ import { TaskService } from '../../services/task.service';
 export class TasksComponent implements OnInit {
 
   tasks: Task[] ;
-  @Input() data ;
+  @Input() public myTask ;
+  
 
   constructor(private taskService: TaskService) {  }
 
